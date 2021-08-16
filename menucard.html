@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menucard</title>
+    <style>
+        body{
+            background: url(https://i.pinimg.com/736x/9a/65/80/9a6580640d0a0c1ab4ac6b8eb871de52.jpg);
+            text-align: center;
+          background-size: cover;
+
+
+        
+        }
+
+        #ca{
+            color: burlywood;font-size: 50px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-align: center;
+        }
+        *{
+            color: blue;
+        }
+     
+        
+        h1{
+            color: blue;font-size: 100px;
+        }
+        h2{
+            color: rgb(0, 26, 255);font-size: 40px;
+        }
+        #user,button,#hero{
+         width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+         box-shadow: 0px 1px 4px rgba(0 , 0, 0, .2);
+
+        }
+        button{
+            width: 100px;
+            background-color: red;
+            color: white;
+        }
+        #hero{
+            width: 300px;
+        }
+        li{
+            color: rgb(255, 2, 44);font-size: 40px;
+        }
+        label{
+            font-size: 50px;
+        }
+        p{
+            color: green;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 35px;
+        }
+
+        h3{
+
+            color: blueviolet;font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Menu card
+        </h1>
+        
+</header>
+<img src="https://media.hrs.com/media/image/01/99/b7/hotel-dummy.png" alt="" width="400" height="400">
+
+<br><br>
+
+
+<input type="text" name="" id="hero" placeholder="Enter any number between 1 to 15">
+    <button onclick="hero()">Submit</button><br><br>
+    <label for="">Type your food number</label><br><br>
+    <ol>
+        <li>Idli</li><br><br>
+        <li>Dosa</li><br><br>
+        <li>Poori</li><br><br>
+        <li>Pongal</li><br><br>
+        <li>Vada</li><br><br>
+        <p>Chat Items</p>
+        <li>panner tikka</li><br><br>
+        <li>Mushroom 65</li><br><br>
+        <li>Paroota</li><br><br>
+        <li>Pulav</li><br><br>
+        <li>Gobi manchurian</li><br><br>
+        <li>Pani puri</li><br><br>
+        <li>Pizza</li><br><br>
+        <li>French Fries</li><br><br>
+        <li>Sweet corn</li><br><br>
+        <li>Icecream</li>
+       
+        
+        </ol>
+        <h2>Result Panel</h2>
+<h3 id="heroresult"></h3>
+    
+</body>
+
+<script>
+
+function hero(){
+
+   var num = "";
+   var hero = document.getElementById("hero").value;
+
+
+   switch(parseInt(hero)){
+
+
+   case 1: num = "your order idli has been placed , wait for some time to recieve your order";
+    break;
+    case 2: num = "your order Dosa has been placed , wait for some time to recieve your order";
+    break;
+    case 3: num = "your order Poori has been placed , wait for some time to recieve your order";
+    break;
+    case 4: num = "your order Pongal has been placed , wait for some time to recieve your order" ;
+    break;
+    
+   case 5: num = "your order vada has been placed , wait for some time to recieve your order";
+    break;
+    case 6: num = "your order Panner Tikka has been placed , wait for some time to recieve your order";
+    break;
+    case 7: num = "your order  mushroom 65  has been placed , wait for some time to recieve your order";
+    break;
+    case 8: num = "your order Paroota has been placed , wait for some time to recieve your order" ;
+    break;
+    
+   case 9: num = "your order Pulav has been placed , wait for some time to recieve your order";
+    break;
+    case 10: num = "your order Gobi manchurian has been placed , wait for some time to recieve your order";
+    break;
+    case 11: num = "your order Pani Puri  has been placed , wait for some time to recieve your order";
+    break;
+    case 12: num = "your order Pizza  has been placed , wait for some time to recieve your order";
+    break;
+    case 13: num = "your order French fries  has been placed , wait for some time to recieve your order";
+    break;
+    case 14: num = "your order  Sweet corn has been placed , wait for some time to recieve your order";
+    break;
+    case 15: num = "your order icecream  has been placed , wait for some time to recieve your order";
+    break;
+    
+
+    default: num = "Not Valid"
+
+   }
+document.getElementById("heroresult").innerText = 
+"Thank you for placing " + num;
+}
+</script>
+<a href="homework7.html" id="ca">Back to Homepage</a>
+</html>
